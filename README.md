@@ -1,6 +1,9 @@
 # gsubsampling
 This is a reference implementation for "Group Equivariant Subsampling" by Jin Xu, Hyunjik Kim, Tom Rainforth and Yee Whye Teh.
 
+<img src="https://github.com/jinxu06/raw/main/subsampling.gif" width="500">
+<img src="https://github.com/jinxu06/raw/main/gae.gif" width="500">
+
 Contact: jin.xu@stats.ox.ac.uk
 
 When using this code, please cite the paper:
