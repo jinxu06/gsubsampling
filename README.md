@@ -76,6 +76,12 @@ To train MONet-GAE-p1, run:
 python main.py hydra.job.name=compare_to_monet model=eqv_monet run.mode=train data=multi_dsprites data.train_set_size=6400 data.batch_size=16 run.max_epochs=1000 run.random_seed=1
 ```
 
+## About this repository
+
+We use [Hydra](https://hydra.cc/) to specify configurations for experiments. " The key feature is the ability to dynamically create a hierarchical configuration by composition and override it through config files and the command line." Our default hydra configurations can be found at `conf/`.
+
+The directory `elm/` contains most of our research code. All the data loaders can be found at `elm/data_loader/`, and all the models can be found at `elm/model/`. Experimental results will be generated at `outputs/`, organised by dates and job names. By default, Logs and checkpoints are directed to `/tmp/log/`, but this can be reconfigured in `conf/config.yaml`.
+
 ## Contact 
 
 To ask questions about code or report issues, please directly open an issue on github. 
