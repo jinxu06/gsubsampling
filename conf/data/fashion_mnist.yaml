@@ -1,0 +1,14 @@
+# @package _group_
+name: fashion_mnist
+datadir: "/tmp"
+batch_size: 16
+img_size: 64
+img_channels: 3
+num_frames: 1
+train_set_size: 10000
+val_set_size: 10000
+test_set_size: 10000
+n_rot: 32
+transformed: True
+constrained_transform: ""
+colored: True

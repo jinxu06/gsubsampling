@@ -1,0 +1,39 @@
+defaults:
+  - hydra/job_logging: colorlog
+  - hydra/hydra_logging: colorlog
+  - hydra/launcher: basic
+  - data: dsprites
+  - model: eqv_ae
+
+task: 1
+
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d}/${hydra.job.name}
+  sweep:
+    dir: outputs/${now:%Y-%m-%d}/${hydra.job.name}
+    subdir: ${hydra.job.override_dirname}
+
+run:
+  exp_name: ${hydra:job.name}
+  version: main
+  mode: reconstruct
+  logdir: "/tmp/log"
+  max_epochs: 1000
+  random_seed: 123 
+  restore: False 
+  gpus: "0"
+  device: "GPU"
+  use_prog_bar: False
+  logger: "tensorboard"
+
+train:
+  learning_rate: 0.0001
+  num_eval_batches: 50
+  turn_on_profiler: False
+  precision: 32
+  num_data_workers: 0
+
+eval:
+  mode: mse
+  which_set: test

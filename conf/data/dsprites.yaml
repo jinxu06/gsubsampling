@@ -1,0 +1,13 @@
+# @package _group_
+name: dsprites
+datadir: "/tmp"
+batch_size: 16
+img_size: 64
+img_channels: 3
+num_frames: 1
+train_set_size: 10000
+val_set_size: 10000
+test_set_size: 10000
+constrained_transform: ""
+use_cache: True
+n_colors: -1

@@ -1,0 +1,10 @@
+# @package _group_
+name: multi_dsprites
+datadir: "/tmp/multi_dsprites"
+batch_size: 64
+img_size: 64
+img_channels: 3
+num_frames: 1
+train_set_size: 10000
+val_set_size: 10000
+test_set_size: 1000

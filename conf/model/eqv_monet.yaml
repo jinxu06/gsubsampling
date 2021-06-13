@@ -1,0 +1,13 @@
+# @package _group_
+name: "eqv_monet"
+dim_latent: 16
+num_mixtures: 5
+pixel_std_fg: 0.11
+pixel_std_bg: 0.09
+kl_l_beta: 0.5
+kl_m_beta: 0.5
+n_channels: 32
+fiber_group: "trivial"
+n_rot: 1
+avg_pool_size: 3
+optimizer: 'RMSProp'

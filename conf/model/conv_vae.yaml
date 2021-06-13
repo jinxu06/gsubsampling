@@ -1,0 +1,4 @@
+# @package _group_
+name: "conv_vae"
+dim_latent: 32
+n_channels: 32

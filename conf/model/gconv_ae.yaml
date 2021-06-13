@@ -1,0 +1,6 @@
+# @package _group_
+name: "gconv_ae"
+dim_latent: 32
+n_channels: 32
+fiber_group: "rot_2d"
+n_rot: 4
