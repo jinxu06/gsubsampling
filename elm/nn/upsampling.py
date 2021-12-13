@@ -23,6 +23,13 @@ class EquivariantUpSampling(torch.nn.Module):
     
   def forward(self, x, p):
     
+    """ This implementation of G-Upsampling is currently pragmatic and 
+    cannot be easily adapted to work with groups beyond p4m. We will 
+    update this code with a new implementation soon during the holiday. 
+    So if you plan to use this code after the 2022 new year, remember to 
+    git pull for the updated code, which should be easier to use.
+    """
+    
     b, c, h, w = x.size()
     y = x
     if self.fiber_group == 'trivial':
