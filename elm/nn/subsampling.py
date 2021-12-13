@@ -60,6 +60,13 @@ class EquivariantFeatureSpace2Group(torch.nn.Module):
 
 class EquivariantSubSampling(torch.nn.Module):
   
+  """ This implementation of G-Subsampling is currently pragmatic and 
+  cannot be easily adapted to work with groups beyond p4m. We will 
+  update this code with a new implementation soon during the holiday. 
+  So if you plan to use this code after the 2022 new year, remember to 
+  git pull for the updated code, which should be easier to use.
+  """
+  
   def __init__(self, 
                scale_factor, 
                fiber_group_size=(1,1), 
